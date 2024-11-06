@@ -1,0 +1,116 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff77a9, #d6a1e2); /* Gradiente romântico */
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+    margin: 20px;
+    animation: slideUp 1s ease-out;
+}
+
+/* Animação de deslizamento para cima */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.title {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+    color: #ffb6c1;
+    letter-spacing: 2px;
+    animation: bounce 1.5s infinite;
+}
+
+/* Efeito de pulsação no título */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+p {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+#surprise-link {
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #ff66b2;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: none; /* Inicialmente oculto */
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    animation: pulseLink 2s infinite;
+}
+
+#surprise-link:hover {
+    background-color: #ff3385;
+    transform: scale(1.05);
+}
+
+#surprise-link:active {
+    transform: scale(0.95);
+}
+
+/* Efeito de pulsação no link */
+@keyframes pulseLink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
